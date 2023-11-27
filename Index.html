@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Menubar with Dropdown</title>
+
+		<script>
+			function toggleMenu() {
+				document.getElementById("navbar").classList.toggle("hidden");
+			}
+			function toggleDropdown() {
+				document.getElementById("dropdownMenu").classList.toggle("hidden");
+			}
+		</script>
+	</head>
+	<body class="font-sans">
+		<!-- Menubar -->
+		<nav class="bg-black text-white p-4">
+			<div class="container mx-auto flex justify-between items-center">
+				<span class="font-semibold text-xl">My Portfolio</span>
+				<button
+					onclick="toggleMenu()"
+					class="text-white px-4 py-2 hover:bg-black-400 rounded transition duration-300 md:hidden"
+				></button>
+				<div class="hidden md:flex">
+					<a
+						href="#aboutme"
+						class="text-white px-4 py-2 hover:bg-black-400 rounded transition duration-300"
+						>About Me</a
+					>
+					<a
+						href="#portfolio"
+						class="text-white px-4 py-2 hover:bg-black-400 rounded transition duration-300"
+						>Certificate</a
+					>
+					<a
+						href="#portfolio"
+						class="text-white px-4 py-2 hover:bg-black-400 rounded transition duration-300"
+						>Portfolio</a
+					>
+					<div class="relative">
+						<button
+							onclick="toggleDropdown()"
+							class="text-white px-4 py-2 hover:bg-white-400 rounded transition duration-300"
+						>
+							More
+						</button>
+						<div
+							id="dropdownMenu"
+							class="absolute right-0 mt-2 py-2 bg-white rounded shadow-xl w-48 hidden"
+						>
+					
+							<a
+								href="#contactus"
+								class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+								>Contact me</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="navbar" class="hidden md:hidden">
+				<a
+					href="#aboutme"
+					class="block text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+					>About Me</a
+				>
+				<a
+					href="#portfolio"
+					class="block text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+					>Portfolio</a
+				>
+				<a
+					href="#certificates"
+					class="block text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+					>Certificates</a
+				>
+				<a
+					href="#contactus"
+					class="block text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+					>Contact Me</a
+				>
+			</div>
+		</nav>
+
+		 <img src="Asset/Image/cat.jpg" class="mx-auto max-w-xl h-md object-cover rounded-full w-36">
+		 
+		 <section id="aboutme" class="py-12 px-4">
+			<div class="max-w-4xl mx-auto text-center ">
+				<h2 class="text-3xl font-bold mb-4">About Me</h2>
+				<p class="text-lg">Hello, my name is Vito Louis, I'm a active collage student on Universtas Pelita Harapan. Hello! I’m Vito Louis. I am student of UPH and i love graphic designer and video editing. Such as using Davinci resolve and Photoshop</p>
+			</div>
+		</section>
+
+		<!-- Portfolio -->
+		<section id="portfolio" class="py-12 px-4 bg-gray-100">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold mb-4">Portfolio</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="shadow-lg p-4 bg-white">
+						<img
+							src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+							alt="Project 1"
+							class="mb-3"
+						/>
+						<p>Deskripsi Project 1</p>
+					</div>
+					<!-- Lebih banyak item portofolio di sini -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Certificates -->
+		<section id="certificates" class="py-12 px-4">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold mb-4">Certificates</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="shadow-lg p-4 bg-white">
+						<img
+							src="Asset/Image/Serti 1.JPG"
+							alt="Certificate 1"
+							class="mb-3"
+						/>
+						<p> Certificate 1</p>
+					</div>
+					<div class="shadow-lg p-4 bg-white">
+					<img
+							src="Asset/Image/Sertificate makrab.png"
+							alt="Certificate 2"
+							class="mb-3">
+							<p> Certificate 2</p>
+				</div>
+				<div class="shadow-lg p-4 bg-white">
+					<img
+							src="Asset/Image/Certificate amartha.png"
+							alt="Certificate 2"
+							class="mb-3">
+							<p> Certificate 3</p>
+			</div>
+		</section>
+
+		<!-- Contact Us -->
+		<section id="contactus" class="py-12 px-4 bg-gray-100">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+				<form>
+					<h1> Gmail: Vitolouis22@gmail.com</h1>
+					<h2>Instagram: Vitolouis22</h2>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
+
+
+			
+		
+
+		<!-- Content Placeholder -->
+		<section id="aboutme" class="py-12 px-4">
+			<!-- Content for About Me -->
+		</section>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
